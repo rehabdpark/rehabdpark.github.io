@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title | Dongho Park</title>
+    <meta name="description" content="Post description here.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-post {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .blog-post-header {
+            margin-bottom: 2rem;
+        }
+        .blog-post-meta {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .blog-post-content {
+            font-size: 1.05rem;
+        }
+        .blog-post-content h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .blog-post-content h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
+        }
+        .blog-post-content p {
+            margin-bottom: 1.25rem;
+        }
+        .blog-post-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .blog-post-content pre {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        .blog-post-content code {
+            font-family: 'SF Mono', Consolas, monospace;
+            font-size: 0.9rem;
+        }
+        .blog-post-content blockquote {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            color: var(--text-light);
+            font-style: italic;
+        }
+        .back-link {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Dongho Park</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../research.html" class="nav-link">Research</a></li>
+                <li><a href="../publications.html" class="nav-link">Publications</a></li>
+                <li><a href="../cv.html" class="nav-link">CV</a></li>
+                <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <article class="blog-post">
+            <header class="blog-post-header">
+                <h1>Post Title Here</h1>
+                <p class="blog-post-meta">January 1, 2025 · 5 min read</p>
+            </header>
+
+            <div class="blog-post-content">
+                <p>
+                    Introduction paragraph goes here. Set the context for your post and
+                    give readers a reason to keep reading.
+                </p>
+
+                <h2>Section Heading</h2>
+                <p>
+                    Content for this section. You can include images, code blocks,
+                    and other media.
+                </p>
+
+                <!-- Example image -->
+                <!-- <img src="../assets/images/post-image.jpg" alt="Description"> -->
+
+                <h3>Subsection</h3>
+                <p>
+                    More detailed content here.
+                </p>
+
+                <blockquote>
+                    A notable quote or key insight from your post.
+                </blockquote>
+
+                <!-- Example code block -->
+                <!--
+                <pre><code>def example_function():
+    return "Hello, World!"</code></pre>
+                -->
+
+                <h2>Conclusion</h2>
+                <p>
+                    Wrap up your post with key takeaways or a call to action.
+                </p>
+            </div>
+
+            <div class="back-link">
+                <a href="../blog.html">&larr; Back to all posts</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dongho Park. All rights reserved.</p>
+            <p>
+                <a href="mailto:dpark@gatech.edu">Email</a> ·
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a> ·
+                <a href="https://www.linkedin.com/in/dongho-park" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Dongho Park</title>
+    <meta name="description" content="Research on deep learning for physiological state estimation, hip exoskeletons, stroke rehabilitation, and wearable robotics.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Dongho Park</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="research.html" class="nav-link active">Research</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Research</h1>
+            <p>I develop machine learning methods to estimate human physiological states from wearable sensors, enabling intelligent systems that enhance mobility and health. My work bridges deep learning, biomechanics, and clinical translation to create assistive technologies that work in the real world.</p>
+        </section>
+
+        <section class="research-section" id="deep-learning">
+            <h3>Deep Learning for Physiological State Estimation</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        The core of my research is developing <strong>deep learning models that estimate users' physiological states</strong>—particularly
+                        biological joint moments—from wearable sensor data in real-time. This capability is the foundation that enables
+                        versatile, tuning-free assistive devices.
+                    </p>
+                    <p>
+                        Biological joint moments represent the user's instantaneous effort and intent. By estimating them continuously,
+                        we bypass the need for discrete task classification (e.g., "walking" vs. "stair climbing") or manual parameter tuning
+                        that has limited previous exoskeleton controllers. Building on the task-agnostic control framework published in
+                        <a href="https://www.nature.com/articles/s41586-024-08157-7" target="_blank"><em>Nature</em> (Molinaro et al., 2024)</a>,
+                        I extend this approach to clinical populations.
+                    </p>
+                    <p>
+                        Key technical contributions:
+                    </p>
+                    <ul>
+                        <li><strong>Temporal Convolutional Networks (TCN)</strong> for subject-independent moment estimation from IMUs, encoders, and pressure insoles</li>
+                        <li><strong>Stroke-specific models</strong> trained on comprehensive datasets capturing the high variability of hemiparetic gait</li>
+                        <li><strong>Device-agnostic estimation</strong> using body-mounted sensor suites that generalize across hardware platforms</li>
+                    </ul>
+                    <p>
+                        This work enables exoskeletons—and potentially other wearable systems—to provide physiologically-appropriate
+                        responses without requiring expensive lab equipment or expert calibration.
+                    </p>
+                </div>
+                <div class="research-media">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/Walking.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="exoskeleton">
+            <h3>Versatile, Tuning-Free Hip Exoskeletons for Stroke Rehabilitation</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        A major barrier to deploying assistive exoskeletons in clinical settings is the need for extensive manual tuning
+                        for each user and task. Existing systems rely on discrete task classification and pre-programmed assistance profiles
+                        that fail to accommodate the complexity and unpredictability of daily life—especially for stroke survivors with
+                        highly variable movement patterns.
+                    </p>
+                    <p>
+                        My dissertation addresses this by applying <strong>continuous biological moment estimation</strong> to hip exoskeleton control.
+                        By proportionally offloading the user's estimated joint moment in real-time, the controller <strong>seamlessly adapts
+                        to diverse activities of daily living without any manual tuning</strong>:
+                    </p>
+                    <ul>
+                        <li><strong>Seamless multi-activity assistance</strong>: Level walking, stairs, ramps, and sit-to-stand transitions—all without switching modes or reprogramming</li>
+                        <li><strong>No manual calibration</strong>: The system automatically accommodates individual differences across the heterogeneous stroke population</li>
+                        <li><strong>Real-time adaptation</strong>: Continuous adjustment to moment-to-moment variations within a single user's gait</li>
+                    </ul>
+                    <p>
+                        In clinical trials with chronic stroke survivors, this approach reduces metabolic cost and improves functional
+                        mobility across a broad spectrum of impairment levels (walking speeds 0.48–1.27 m/s).
+                    </p>
+                    <p>
+                        This work is targeting publication in <em>Nature Medicine</em> (planned submission: Feb 2026).
+                    </p>
+                    <div class="pub-links">
+                        <a href="publications.html">[Related Publications]</a>
+                    </div>
+                </div>
+                <div class="research-media">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/CNN_Sit.mov" type="video/quicktime">
+                            <source src="assets/videos/CNN_Sit.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="hardware">
+            <h3>Custom Hip Exoskeleton Hardware Design</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        Beyond the control algorithms, I designed and built the hip exoskeleton hardware from scratch (excluding actuators),
+                        specifically optimized for clinical populations. The design emphasizes <strong>ease of donning, adaptability to various
+                        body shapes, a low-profile structure, and lightweight construction</strong>.
+                    </p>
+                    <p>
+                        <strong>System Overview:</strong> The exoskeleton comprises a hip interface integrated with brushless DC motors (AK80-9, Cubemars)
+                        and a lightweight backpack housing the electronics and battery. The complete system weighs approximately 4 kg
+                        and provides ~30 minutes of continuous operation from a single 24V lithium-ion battery. Each motor delivers up to
+                        18 Nm of bidirectional peak torque—approximately 20% of peak biological hip torque during walking.
+                    </p>
+                    <p>
+                        <strong>Lightweight Construction:</strong> To minimize weight while maintaining strength, structural components were fabricated
+                        using SLS-printed Nylon-12 (Formlabs) for the main hip interface and custom carbon-fiber sheets for the thigh interface,
+                        offering high stiffness and straightforward manufacturability.
+                    </p>
+                    <p>
+                        <strong>One-Size-Fits-All Adaptability:</strong> A cam-lever mechanism adjusts the hip interface width from 28–43 cm,
+                        accommodating users from the 0th to 86th percentile for males. The carbon-fiber thigh strut includes active vertical
+                        adjustment points and passive degrees of freedom for translational motion and hip adduction–abduction.
+                    </p>
+                    <p>
+                        <strong>Clinical Usability:</strong> Motor modules attach/detach via spring-loaded locking mechanisms for rapid replacement.
+                        A central opening in the motor mount allows clinicians to palpate the user's anatomical hip joint for accurate alignment.
+                        All straps feature BOA dials and magnetic buckles for fine tension adjustment and fast donning/doffing.
+                    </p>
+                </div>
+                <div class="research-media">
+                    <div class="image-container">
+                        <img src="assets/images/Exo.png" alt="Custom hip exoskeleton hardware design showing adjustable interfaces and clinical features">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="clinical">
+            <h3>Clinical Translation & Real-World Validation</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        My unique background bridging robotics engineering (B.S.), clinical medicine (M.S.), and wearable robotics (Ph.D.)
+                        drives my commitment to translational research. I design studies that validate whether laboratory innovations
+                        translate to meaningful improvements in patients' real-world mobility and quality of life.
+                    </p>
+                    <p>
+                        Current clinical efforts include:
+                    </p>
+                    <ul>
+                        <li><strong>Multi-site collaboration</strong> with rehabilitation clinicians at Emory University (Drs. Trisha Kesar, Benjamin Rogozinski)</li>
+                        <li><strong>Clinical trial design</strong> evaluating metabolic, biomechanical, functional, and patient-reported outcomes</li>
+                    </ul>
+                    <p>
+                        Previously, I contributed to a <strong>Cybathlon-winning</strong> powered exoskeleton team (1st place, 2020) and published
+                        clinical research on pediatric cerebral palsy rehabilitation in <em>JAMA Network Open</em>.
+                    </p>
+                </div>
+                <div class="research-media">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/CNN_6MWT.mov" type="video/quicktime">
+                            <source src="assets/videos/CNN_6MWT.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="stroke-dataset">
+            <h3>Comprehensive Stroke Biomechanics Dataset</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        Stroke recovery involves relearning a wide range of daily activities, from basic movements to complex functional tasks.
+                        To advance rehabilitation research, wearable sensor development, and exoskeleton control strategies, I am leading the creation
+                        of a <strong>comprehensive, open-source dataset</strong> capturing lower-limb movements in stroke survivors during real-world activities.
+                    </p>
+                    <p>
+                        <strong>Dataset Scope:</strong> Data were collected from 20 chronic stroke survivors performing 21 activities, including
+                        walking tasks (level, stairs, ramps), sit-to-stand, turning, and functional activities like getting in and out of a car.
+                    </p>
+                    <p>
+                        <strong>Multi-Modal Data Collection:</strong> I personally collected and processed diverse wearable sensor data streams:
+                    </p>
+                    <ul>
+                        <li><strong>Kinematics</strong>: Motion capture and body-worn IMUs</li>
+                        <li><strong>Kinetics</strong>: Ground reaction forces from instrumented force plates</li>
+                        <li><strong>Electromyography (EMG)</strong>: 8 lower-limb muscles bilaterally</li>
+                        <li><strong>Clinical assessments</strong>: Motor function, balance, and mobility evaluations</li>
+                    </ul>
+                    <p>
+                        <strong>Unique Contribution:</strong> This dataset uniquely combines multi-modal wearable sensor data from stroke patients
+                        across a spectrum of real-world tasks—providing an unprecedented resource for understanding movement patterns and impairments
+                        in clinical populations. I completed all data collection, processing, and preparation for open-source release.
+                    </p>
+                    <p>
+                        This work is targeting publication in <em>NEJM AI</em> (planned submission: Mar 2026) and will be released as an open-source
+                        resource for the research community.
+                    </p>
+                    <div class="pub-links">
+                        <a href="publications.html#J16">[Related Publication]</a>
+                    </div>
+                </div>
+                <div class="research-media">
+                    <div class="video-container">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/videos/MultiTask.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="human-in-loop">
+            <h3>Human-in-the-Loop Optimization</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        Even with moment-based control, finding optimal assistance parameters (e.g., scaling factors, timing delays) remains
+                        challenging because human responses are highly individual and nonlinear. I develop <strong>human-in-the-loop optimization</strong>
+                        methods that automatically discover personalized assistance profiles by optimizing directly on physiological outcomes.
+                    </p>
+                    <p>
+                        Our work on optimizing hip exoskeleton assistance during stair climbing was published in
+                        <em>IEEE Transactions on Biomedical Engineering</em> and selected as the <strong>Featured Article</strong> (July 2025).
+                    </p>
+                    <div class="pub-links">
+                        <a href="publications.html#J12">[Read the paper]</a>
+                    </div>
+                </div>
+                <div class="research-media">
+                    <div class="image-container">
+                        <img src="assets/images/HILO.jpg" alt="Human-in-the-loop optimization framework for hip exoskeleton assistance">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="future">
+            <h3>Future Directions</h3>
+            <div class="research-text">
+                <p>
+                    While my current work focuses on hip exoskeletons for stroke, the underlying approach—<strong>data-driven estimation
+                    of physiological states from wearable sensors</strong>—has broad applications beyond robotic assistance.
+                </p>
+                <p>
+                    I am interested in extending these methods toward:
+                </p>
+                <ul>
+                    <li><strong>Wearable health monitoring</strong>: Continuous, unobtrusive tracking of movement quality, fatigue, and disease progression</li>
+                    <li><strong>Flexible biointerfaces</strong>: Soft, multimodal sensors that combine with AI for self-calibrating physiological monitoring</li>
+                    <li><strong>Computational movement analysis</strong>: Machine learning and biomechanical modeling tools that interpret human motion for clinical decision-making</li>
+                    <li><strong>Broader neurological populations</strong>: Parkinson's disease, cerebral palsy, spinal cord injury, and age-related mobility decline</li>
+                </ul>
+                <p>
+                    I am applying for the <strong>Schmidt Science Fellowship</strong> (May 2026) to explore intelligent soft bio-interfaces,
+                    and preparing an <strong>NIH K99/R00</strong> proposal on AI-powered multimodal sensing for precision rehabilitation.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dongho Park. All rights reserved.</p>
+            <p>
+                <a href="mailto:dpark@gatech.edu">Email</a> ·
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a> ·
+                <a href="https://www.linkedin.com/in/dongho-park" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
