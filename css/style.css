@@ -442,6 +442,14 @@ section h2 {
     flex: 1;
 }
 
+.research-text p {
+    margin-bottom: 1rem;
+}
+
+.research-text ul {
+    margin-bottom: 1rem;
+}
+
 .research-media {
     flex-shrink: 0;
     width: 520px;
