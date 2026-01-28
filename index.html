@@ -68,20 +68,25 @@
                 My research lies at the intersection of <strong>Soft Bio-Electronics, Embodied AI, and Human-Centric Robotics</strong>.
             </p>
             <p>
-                I specialize in building <strong>intelligent wearable systems</strong> that bridge the gap between humans and machines. 
+                I specialize in building <strong>intelligent wearable systems</strong> that bridge the gap between humans and machines.
                 My work follows a "full-stack" approach:
             </p>
             <ul>
                 <li>
-                    <strong>Hardware & Sensing (Soft Robotics):</strong> Designing ergonomic hardware integrated with <strong>flexible, second-skin sensors</strong> to capture high-fidelity physiological signals in the real world.
+                    <strong>Hardware & Sensing:</strong> Designing ergonomic robotic hardware integrated with <strong>flexible, second-skin sensors</strong> to capture high-fidelity physiological signals (IMU, EMG, Force) in real-world conditions.
                 </li>
                 <li>
-                    <strong>Data & Learning (Embodied AI):</strong> Constructing large-scale <strong>multimodal datasets</strong> (Kinematics, Dynamics, EMG) and developing <strong>Zero-shot generalization policies</strong> (using TCNs and Human-in-the-loop Optimization) that allow robots to adapt to diverse users without manual tuning.
+                    <strong>Biomechanical Modeling:</strong> Building comprehensive <strong>multimodal datasets</strong> and developing <strong>open-source computational tools</strong> (including OpenSim pipelines for IK/ID and a Python toolbox for data visualization and biomechanical/clinical analysis).
+                </li>
+                <li>
+                    <strong>Data & Learning:</strong> Developing <strong>zero-shot generalization policies</strong> (using TCNs and Human-in-the-loop Optimization) that enable robots to adapt to diverse users without manual tuning—a challenge directly analogous to generalizing manipulation skills across objects and environments.
                 </li>
             </ul>
             <p>
-                By combining <strong>soft bio-integrated interfaces</strong> with <strong>data-driven control</strong>, I aim to create assistive robots that are not only mechanically capable but also seamlessly attuned to human intent.
-                Previously, I received my M.S. in Medicine, providing me with a unique clinical perspective to validate these technologies with real patient populations (e.g., Stroke survivors).
+                By combining <strong>soft bio-integrated interfaces</strong> with <strong>computational biomechanics</strong> and <strong>data-driven control</strong>, I aim to create assistive robots that are seamlessly attuned to human intent.
+            </p>
+            <p>
+                <strong>Clinical Foundation:</strong> I hold an M.S. in Medicine (Physiology) and have led clinical trials with stroke survivors. This medical training enables me to design patient-centered technologies and bridge the gap between engineering innovation and clinical impact.
             </p>
         </section>
 
@@ -90,8 +95,8 @@
 
             <div class="highlight-row">
                 <div class="highlight-text">
-                    <h3>Deep Learning for Physiological State Estimation</h3>
-                    <p>Subject-independent estimation of biological joint moments from wearable sensors using temporal convolutional networks. This core technology enables versatile, tuning-free assistance by continuously interpreting users' physiological states in real-time.</p>
+                    <h3>Multimodal Representation Learning</h3>
+                    <p>Subject-independent estimation of biological joint moments from wearable sensors (IMU, EMG, Force) using temporal convolutional networks. This enables zero-shot generalization to new users—a core challenge in learning robust policies from human data.</p>
                     <a href="research.html#deep-learning" class="card-link">Learn more &rarr;</a>
                 </div>
                 <div class="highlight-media">
@@ -104,7 +109,7 @@
             <div class="highlight-row reverse">
                 <div class="highlight-text">
                     <h3>Tuning-Free Hip Exoskeletons for Stroke</h3>
-                    <p>Applying real-time moment estimation to deliver seamless exoskeleton assistance across diverse daily activities—walking, stairs, sit-to-stand—without manual calibration or task classification. The system automatically adapts to each stroke survivor's unique movement patterns.</p>
+                    <p>Real-time moment estimation enables seamless exoskeleton assistance across diverse daily activities without manual calibration. The system automatically adapts to each stroke survivor's unique movement patterns—demonstrating policy generalization across heterogeneous users.</p>
                     <a href="research.html#exoskeleton" class="card-link">Learn more &rarr;</a>
                 </div>
                 <div class="highlight-media">
@@ -117,27 +122,27 @@
 
             <div class="highlight-row">
                 <div class="highlight-text">
-                    <h3>Clinical Translation & Validation</h3>
-                    <p>Conducting clinical trials with stroke survivors to validate that laboratory innovations translate to meaningful improvements in real-world mobility and quality of life. My medical background enables patient-centered technology design.</p>
-                    <a href="research.html#clinical" class="card-link">Learn more &rarr;</a>
+                    <h3>Biomechanics Dataset & Computational Tools</h3>
+                    <p>Leading the creation of an open-source multimodal dataset (20 stroke survivors, 39 activities) with synchronized IMU, EMG, motion capture, and force plate data. Developing a Python toolbox for data visualization and biomechanical/clinical analysis.</p>
+                    <a href="research.html#stroke-dataset" class="card-link">Learn more &rarr;</a>
                 </div>
                 <div class="highlight-media">
                     <video autoplay loop muted playsinline>
-                        <source src="assets/videos/CNN_6MWT.mov" type="video/quicktime">
-                        <source src="assets/videos/CNN_6MWT.mov" type="video/mp4">
+                        <source src="assets/videos/MultiTask.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
 
             <div class="highlight-row reverse">
                 <div class="highlight-text">
-                    <h3>Comprehensive Stroke Biomechanics Dataset</h3>
-                    <p>Leading the creation of an open-source dataset capturing multi-modal wearable sensor data from 20 stroke survivors across 21 daily activities. A unique resource for rehabilitation research, wearable sensor development, and exoskeleton control strategies.</p>
-                    <a href="research.html#stroke-dataset" class="card-link">Learn more &rarr;</a>
+                    <h3>Clinical Translation & Validation</h3>
+                    <p>Conducting clinical trials with stroke survivors to validate that laboratory innovations translate to meaningful improvements in real-world mobility. My M.S. in Medicine enables patient-centered technology design and rigorous clinical study execution.</p>
+                    <a href="research.html#clinical" class="card-link">Learn more &rarr;</a>
                 </div>
                 <div class="highlight-media">
                     <video autoplay loop muted playsinline>
-                        <source src="assets/videos/MultiTask.mp4" type="video/mp4">
+                        <source src="assets/videos/CNN_6MWT.mov" type="video/quicktime">
+                        <source src="assets/videos/CNN_6MWT.mov" type="video/mp4">
                     </video>
                 </div>
             </div>
