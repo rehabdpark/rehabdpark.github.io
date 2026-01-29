@@ -43,18 +43,24 @@
             <div class="research-statement">
                 <h2>Research Vision</h2>
                 <p>
-                    I develop <strong>intelligent physical systems</strong> that seamlessly integrate with the human body to enhance mobility and health.
+                    I develop <strong>intelligent wearable systems</strong> that seamlessly integrate with the human body to enhance mobility and health.
                     My research combines three interconnected pillars:
                 </p>
                 <ul>
-                    <li><strong>Soft Bio-Integrated Hardware:</strong> Flexible, second-skin sensors and ergonomic robotic interfaces that capture high-fidelity physiological signals in real-world conditions.</li>
-                    <li><strong>Computational Biomechanics:</strong> Large-scale multimodal datasets and open-source tools (OpenSim pipelines for IK/ID, Python toolbox for visualization and analysis) that transform raw sensor data into interpretable biomechanical states.</li>
-                    <li><strong>Data-Driven Control & Learning:</strong> Zero-shot generalization policies that enable robots to adapt to diverse users without manual tuning—addressing challenges directly analogous to generalizing learned skills across varied conditions.</li>
+                    <li><strong>Wearable Sensing & Hardware:</strong> Ergonomic robotic interfaces with body-worn sensors (IMU, insole force) that capture movement data in real-world conditions.</li>
+                    <li><strong>Computational Biomechanics:</strong> Large-scale multimodal datasets and open-source tools—OpenSim pipelines for Inverse Kinematics/Inverse Dynamics, and Python toolbox for visualization and analysis.</li>
+                    <li><strong>Data-Driven Control & Learning:</strong> Deep learning models (TCNs) that estimate physiological states from sensor data with zero-shot generalization to new users, and Bayesian optimization for sample-efficient controller tuning.</li>
                 </ul>
                 <p>
-                    By unifying <strong>soft bio-interfaces</strong>, <strong>computational modeling</strong>, and <strong>machine learning</strong>, I aim to create assistive technologies that are not only mechanically capable but also seamlessly attuned to human intent.
-                    My clinical training (M.S. in Medicine) grounds this work in patient-centered design and rigorous validation with real patient populations.
+                    By unifying <strong>wearable sensing</strong>, <strong>computational modeling</strong>, and <strong>machine learning</strong>, I aim to create assistive technologies that generalize across diverse daily activities, user physiologies, and the inherent heterogeneity of clinical populations.
+                    My medical background grounds this work in patient-centered design and rigorous clinical validation.
                 </p>
+                <h3>Future Directions</h3>
+                <ul>
+                    <li><strong>Scalable Computational Biomechanics:</strong> Open-source tools that democratize biomechanical analysis, enabling researchers worldwide to extract insights from movement data.</li>
+                    <li><strong>Generalizable Learning from Human Data:</strong> Developing policies that transfer across users, tasks, and embodiments—connecting rehabilitation robotics to broader challenges in robot learning.</li>
+                    <li><strong>Clinical Translation:</strong> Expanding to diverse neurological populations (Parkinson's, cerebral palsy, spinal cord injury) with rigorous clinical validation.</li>
+                </ul>
             </div>
         </section>
 
@@ -64,7 +70,7 @@
                 <div class="research-text">
                     <p>
                         The core of my research is developing <strong>deep learning models that estimate users' physiological states</strong>—particularly
-                        biological joint moments—from multimodal wearable sensor data (IMU, EMG, Force) in real-time. This capability enables
+                        biological joint moments—from wearable sensor data (IMU, insole force) in real-time. This capability enables
                         <strong>zero-shot generalization</strong> to new users without manual calibration.
                     </p>
                     <p>
@@ -78,7 +84,7 @@
                         Key technical contributions:
                     </p>
                     <ul>
-                        <li><strong>Temporal Convolutional Networks (TCN)</strong> for subject-independent moment estimation from multimodal wearable sensors</li>
+                        <li><strong>Temporal Convolutional Networks (TCN)</strong> for subject-independent moment estimation from wearable sensors (IMU, insole force)</li>
                         <li><strong>Zero-shot generalization</strong> to unseen users—a challenge analogous to generalizing learned policies across varied conditions</li>
                         <li><strong>Stroke-specific models</strong> trained on comprehensive datasets capturing the high variability of clinical populations</li>
                     </ul>
@@ -180,7 +186,7 @@
             <div class="research-content">
                 <div class="research-text">
                     <p>
-                        <strong>My M.S. in Medicine (Physiology)</strong> uniquely positions me to bridge engineering innovation and clinical impact.
+                        <strong>My medical background</strong> uniquely positions me to bridge engineering innovation and clinical impact.
                         I understand patient workflows, clinical outcome measures, and the regulatory landscape—enabling me to design
                         technologies that are not only technically sound but also clinically meaningful.
                     </p>
@@ -284,20 +290,6 @@
             </div>
         </section>
 
-        <section class="research-section" id="future">
-            <h3>Future Directions</h3>
-            <div class="research-text">
-                <p>
-                    My long-term research vision extends the "full-stack" approach—<strong>soft sensing → computational modeling → data-driven learning</strong>—to broader applications:
-                </p>
-                <ul>
-                    <li><strong>Soft Bio-Integrated Interfaces:</strong> Flexible, multimodal sensors that seamlessly integrate with the body for continuous health monitoring and human-robot interaction.</li>
-                    <li><strong>Scalable Computational Biomechanics:</strong> Open-source tools that democratize biomechanical analysis, enabling researchers worldwide to extract insights from movement data.</li>
-                    <li><strong>Generalizable Learning from Human Data:</strong> Developing policies that transfer across users, tasks, and embodiments—connecting rehabilitation robotics to broader challenges in robot learning.</li>
-                    <li><strong>Clinical Translation:</strong> Expanding to diverse neurological populations (Parkinson's, cerebral palsy, spinal cord injury) with rigorous clinical validation.</li>
-                </ul>
-            </div>
-        </section>
     </main>
 
     <footer>
