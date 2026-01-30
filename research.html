@@ -43,98 +43,29 @@
             <div class="research-statement">
                 <h2>Research Vision</h2>
                 <p>
-                    I develop <strong>intelligent wearable systems</strong> that seamlessly integrate with the human body to enhance mobility and health.
-                    My core approach is <strong>deep learning-based estimation of physiological states</strong> from wearable sensors,
-                    enabling assistive devices that are <strong>versatile and tuning-free</strong>—adapting to diverse individuals, activities,
-                    and pathological movement patterns without manual calibration or task classification.
-                </p>
-                <p>
-                    This vision is built on three interconnected pillars: (1) <strong>wearable sensing and hardware</strong> that captures
-                    kinematic and kinetic data in real-world conditions; (2) <strong>computational biomechanics</strong> through large-scale
-                    open-source datasets and analysis tools; and (3) <strong>data-driven learning</strong> using Temporal Convolutional Networks
-                    that achieve zero-shot generalization across new users, novel tasks, and heterogeneous patient physiologies.
-                </p>
-                <p>
-                    Looking forward, I aim to <strong>democratize biomechanical analysis</strong> through open-source computational tools,
-                    develop <strong>generalizable learning frameworks</strong> that transfer across users, tasks, and embodiments,
-                    and expand <strong>clinical translation</strong> to diverse neurological populations including Parkinson's disease,
-                    cerebral palsy, and spinal cord injury. My medical background—clinical gait analysis and rehabilitation research—grounds
-                    this work in patient-centered design and rigorous clinical validation.
+                    I aim to improve human mobility across the lifespan through intelligent wearable systems. My research spans three interconnected directions: <strong>wearable sensing</strong> to capture how people move in daily life, <strong>machine learning</strong> to transform movement data into actionable insight, and <strong>adaptive assistive technologies</strong> that respond to each individual's needs. These efforts are unified by a commitment to building solutions that work in real life, for real people.
                 </p>
             </div>
         </section>
 
-        <section class="research-section" id="deep-learning">
-            <h3>Multimodal Representation Learning for Human State Estimation</h3>
+        <section class="research-section" id="tuning-free-exo">
+            <h3>A Versatile, Tuning-Free Hip Exoskeleton Improves Real-World Mobility in Stroke Survivors</h3>
             <div class="research-content">
                 <div class="research-text">
                     <p>
-                        The core of my research is developing <strong>deep learning models that estimate users' physiological states</strong>—particularly
-                        biological joint moments—from wearable sensor data (IMU, insole force) in real-time. This capability enables
-                        <strong>zero-shot generalization</strong> across new users, novel tasks, and heterogeneous patient physiologies without manual calibration.
+                        This study develops a wearable robot that assists stroke survivors without requiring manual calibration—a key barrier to real-world deployment. The system uses deep learning to estimate physiological effort from wearable sensors in real-time, enabling automatic adaptation across new users, novel tasks, and heterogeneous patient physiologies.
                     </p>
                     <p>
-                        Biological joint moments represent the user's instantaneous effort and intent. By learning robust representations
-                        from multimodal sensory inputs, we bypass the need for discrete task classification or manual parameter tuning.
-                        Building on the task-agnostic control framework published in
-                        <a href="https://www.nature.com/articles/s41586-024-08157-7" target="_blank"><em>Nature</em> (Molinaro et al., 2024)</a>,
-                        I extend this approach to clinical populations with highly heterogeneous movement patterns.
+                        A wearable sensing suite integrated with an in-house designed hip exoskeleton enables seamless, sensor-driven assistance. Clinical trials with 12 chronic stroke survivors demonstrated reduced metabolic cost, improved walking endurance, and increased mobility confidence across diverse daily activities including stairs, slopes, and sit-to-stand transitions.
                     </p>
-                    <p>
-                        Key technical contributions:
-                    </p>
-                    <ul>
-                        <li><strong>Temporal Convolutional Networks (TCN)</strong> for subject-independent moment estimation from wearable sensors (IMU, insole force)</li>
-                        <li><strong>Zero-shot generalization</strong> across unseen users, novel tasks, and heterogeneous stroke physiologies</li>
-                        <li><strong>Stroke-specific models</strong> trained on comprehensive datasets capturing the high variability of clinical populations</li>
-                    </ul>
-                    <p>
-                        This work demonstrates that learning from diverse human data enables robust generalization—a principle applicable
-                        to broader embodied AI systems beyond wearable robotics.
+                    <p class="pub-venue">
+                        Targeting <em>Nature Medicine</em> (Planned: Feb 2026)
                     </p>
                 </div>
                 <div class="research-media">
-                    <div class="video-container">
-                        <video autoplay loop muted playsinline>
-                            <source src="assets/videos/Walking.mp4" type="video/mp4">
-                        </video>
+                    <div class="image-container">
+                        <img src="assets/images/TCN.png" alt="Temporal Convolutional Network for real-time physiological state estimation">
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="research-section" id="exoskeleton">
-            <h3>Versatile, Tuning-Free Hip Exoskeletons for Stroke Rehabilitation</h3>
-            <div class="research-content">
-                <div class="research-text">
-                    <p>
-                        A major barrier to deploying assistive exoskeletons in clinical settings is the need for extensive manual tuning
-                        for each user and task. Existing systems rely on discrete task classification and pre-programmed assistance profiles
-                        that fail to accommodate the complexity and unpredictability of daily life—especially for stroke survivors with
-                        highly variable movement patterns.
-                    </p>
-                    <p>
-                        My dissertation addresses this by applying <strong>continuous biological moment estimation</strong> to hip exoskeleton control.
-                        By proportionally offloading the user's estimated joint moment in real-time, the controller <strong>seamlessly adapts
-                        to diverse activities of daily living without any manual tuning</strong>:
-                    </p>
-                    <ul>
-                        <li><strong>Seamless multi-activity assistance</strong>: Continuously assists diverse daily activities ranging from level walking at various speeds to negotiating ramps, stairs, and obstacles, while handling complex transitions like sit-to-stand, shuffling, and start-to-stop maneuvers without reprogramming</li>
-                        <li><strong>No manual calibration</strong>: The system automatically accommodates individual differences across the heterogeneous stroke population</li>
-                        <li><strong>Real-time adaptation</strong>: Continuous adjustment to moment-to-moment variations within a single user's gait</li>
-                    </ul>
-                    <p>
-                        In clinical trials with chronic stroke survivors, this approach reduces metabolic cost and improves functional
-                        mobility across a broad spectrum of impairment levels (walking speeds 0.48–1.27 m/s).
-                    </p>
-                    <p>
-                        This work is targeting publication in <em>Nature Medicine</em> (planned submission: Feb 2026).
-                    </p>
-                    <div class="pub-links">
-                        <a href="publications.html">[Related Publications]</a>
-                    </div>
-                </div>
-                <div class="research-media">
                     <div class="video-container">
                         <video autoplay loop muted playsinline>
                             <source src="assets/videos/CNN_Sit.mov" type="video/quicktime">
@@ -145,110 +76,18 @@
             </div>
         </section>
 
-        <section class="research-section" id="hardware">
-            <h3>Ergonomic Hardware & Soft Bio-Integrated Sensing</h3>
-            <div class="research-content">
-                <div class="research-text">
-                    <p>
-                        Effective human-robot interaction requires hardware that seamlessly integrates with the body.
-                        I designed and built a hip exoskeleton hardware platform from scratch, optimized for <strong>ergonomic fit,
-                        multimodal sensing integration, and clinical usability</strong>.
-                    </p>
-                    <p>
-                        <strong>Lightweight, Adaptable Structure:</strong> Structural components use SLS-printed Nylon-12 and custom carbon-fiber sheets.
-                        A cam-lever mechanism enables one-size-fits-all adjustment (0th–86th percentile), with passive degrees of freedom
-                        for natural hip motion.
-                    </p>
-                    <p>
-                        <strong>Integrated Sensing Suite:</strong> The platform incorporates flexible, body-conforming sensors for multimodal data collection:
-                        IMUs for kinematics, pressure insoles for ground reaction forces, and EMG for muscle activity.
-                        This sensor architecture enables high-fidelity physiological signal capture during unconstrained real-world activities.
-                    </p>
-                    <p>
-                        <strong>Clinical Usability:</strong> Quick-release motor modules, palpation openings for anatomical alignment,
-                        BOA dials and magnetic buckles for fast donning/doffing—all designed with clinician and patient workflows in mind.
-                    </p>
-                    <p>
-                        This hardware-software co-design philosophy reflects my interest in <strong>soft bio-integrated interfaces</strong>
-                        that bridge flexible electronics, wearable sensing, and robotic actuation.
-                    </p>
-                </div>
-                <div class="research-media">
-                    <div class="image-container">
-                        <img src="assets/images/Exo.png" alt="Custom hip exoskeleton hardware design showing adjustable interfaces and integrated sensing">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="research-section" id="clinical">
-            <h3>Clinical Translation & Real-World Validation</h3>
-            <div class="research-content">
-                <div class="research-text">
-                    <p>
-                        I hold a B.S. in Biomedical Engineering and an M.S. in Medicine from Yonsei University, where I conducted
-                        clinical gait analysis and rehabilitation research at Severance Hospital. This <strong>medical background</strong>
-                        uniquely positions me to bridge engineering innovation and clinical impact—I understand patient workflows,
-                        clinical outcome measures, and the practical constraints of real-world healthcare settings.
-                    </p>
-                    <p>
-                        Current clinical efforts:
-                    </p>
-                    <ul>
-                        <li><strong>Clinical trials</strong> with stroke survivors, evaluating metabolic, biomechanical, functional, and patient-reported outcomes</li>
-                        <li><strong>Multi-site collaboration</strong> with rehabilitation clinicians at Emory University</li>
-                        <li><strong>Patient-centered design</strong> incorporating clinician and patient feedback throughout the development cycle</li>
-                    </ul>
-                    <p>
-                        Previous clinical experience includes contributing to a <strong>Cybathlon-winning</strong> powered exoskeleton team (1st place, 2020)
-                        and publishing clinical research on pediatric cerebral palsy rehabilitation in <em>JAMA Network Open</em>.
-                    </p>
-                </div>
-                <div class="research-media">
-                    <div class="video-container">
-                        <video autoplay loop muted playsinline>
-                            <source src="assets/videos/CNN_6MWT.mov" type="video/quicktime">
-                            <source src="assets/videos/CNN_6MWT.mov" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="research-section" id="stroke-dataset">
-            <h3>Multimodal Biomechanics Dataset & Computational Tools</h3>
+            <h3>Open-Source Stroke Biomechanics: A Large-Scale Dataset for Data-Driven Rehabilitation</h3>
             <div class="research-content">
                 <div class="research-text">
                     <p>
-                        Large-scale, high-quality datasets are essential for training generalizable models.
-                        I am leading the creation of a <strong>comprehensive, open-source biomechanics dataset</strong> capturing
-                        lower-limb movements in stroke survivors during real-world activities.
+                        This study creates a comprehensive, open-source dataset capturing how stroke survivors move during real-world activities—data essential for training generalizable AI models for rehabilitation.
                     </p>
                     <p>
-                        <strong>Dataset Scope:</strong> Data from 20 chronic stroke survivors performing 39 activities, including
-                        walking (level, stairs, ramps), sit-to-stand, turning, and functional tasks like car transfers.
+                        The dataset includes 20 stroke survivors performing 39 activities with synchronized motion capture, wearable IMU, pressure insole, and EMG, along with clinical assessments (Fugl-Meyer, Mini-BESTest). Beyond raw data collection, I developed a complete processing pipeline—data cleaning, musculoskeletal modeling (OpenSim), and biomechanical analysis including body scaling, inverse kinematics, and inverse dynamics. I also built an open-source Python toolbox for visualization and clinical analysis, designed to be accessible to both engineers and clinicians.
                     </p>
-                    <p>
-                        <strong>Multimodal Data Streams:</strong>
-                    </p>
-                    <ul>
-                        <li><strong>Kinematics</strong>: Motion capture (marker-based) and body-worn IMUs</li>
-                        <li><strong>Kinetics</strong>: Ground reaction forces from instrumented force plates and pressure insoles</li>
-                        <li><strong>Electromyography (EMG)</strong>: 8 lower-limb muscles bilaterally</li>
-                        <li><strong>Clinical assessments</strong>: Motor function, balance, and mobility evaluations</li>
-                    </ul>
-                    <p>
-                        <strong>Computational Tools:</strong> Beyond data collection, I developed two open-source resources:
-                        (1) <strong>OpenSim pipelines</strong> for Inverse Kinematics (IK) and Inverse Dynamics (ID) computation, and
-                        (2) a <strong>Python toolbox</strong> for data visualization and biomechanical/clinical analysis, enabling researchers
-                        to easily explore and utilize the dataset.
-                    </p>
-                    <p>
-                        <strong>Impact:</strong> This resource enables training of generalizable ML models for rehabilitation,
-                        wearable sensing, and assistive robotics—bridging the gap between clinical data and computational research.
-                    </p>
-                    <p>
-                        Targeting publication in <em>NEJM AI</em> (planned submission: Mar 2026).
+                    <p class="pub-venue">
+                        Targeting <em>NEJM AI</em> (Planned: Mar 2026)
                     </p>
                 </div>
                 <div class="research-media">
@@ -262,30 +101,66 @@
         </section>
 
         <section class="research-section" id="human-in-loop">
-            <h3>Human-in-the-Loop Optimization</h3>
+            <h3>Personalized Hip Exoskeleton Assistance via Human-in-the-Loop Optimization</h3>
             <div class="research-content">
                 <div class="research-text">
                     <p>
-                        Finding optimal control parameters for human-robot interaction is challenging because human responses are highly
-                        individual and nonlinear. I develop <strong>human-in-the-loop optimization</strong> methods using Bayesian optimization
-                        to automatically discover personalized assistance profiles with high sample efficiency.
+                        This study develops a data-efficient optimization framework that automatically discovers personalized assistance parameters for wearable robots.
                     </p>
                     <p>
-                        This approach treats the human as part of the optimization loop—directly optimizing physiological outcomes
-                        (e.g., metabolic cost) rather than relying on predefined heuristics. The framework demonstrates how
-                        <strong>data-efficient learning</strong> can personalize robotic behavior to individual users.
+                        Using Bayesian optimization with real-time metabolic feedback, the system efficiently searches high-dimensional parameter spaces to find optimal assistance profiles for each user—without exhaustive manual tuning. Validated on hip exoskeleton assistance during stair climbing, the optimized profiles reduced metabolic cost by 4.5% compared to no exoskeleton and 11.4% compared to unassisted exoskeleton walking.
                     </p>
-                    <p>
-                        Our work on optimizing hip exoskeleton assistance during stair climbing was published in
-                        <em>IEEE Transactions on Biomedical Engineering</em> and selected as the <strong>Featured Article</strong> (July 2025).
+                    <p class="pub-venue">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10858452" target="_blank"><em>IEEE Trans. Biomedical Engineering</em>, 2025</a> <span class="pub-highlight">[Featured Article]</span>
                     </p>
-                    <div class="pub-links">
-                        <a href="publications.html#J12">[Read the paper]</a>
-                    </div>
                 </div>
                 <div class="research-media">
                     <div class="image-container">
                         <img src="assets/images/HILO.jpg" alt="Human-in-the-loop optimization framework for hip exoskeleton assistance">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="cp-rct">
+            <h3>Robot-Assisted Overground Gait Training Improves Mobility in Children with Cerebral Palsy</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        This study evaluates the clinical effectiveness of a torque-assisted wearable exoskeleton for gait rehabilitation in children with cerebral palsy.
+                    </p>
+                    <p>
+                        In a multicenter randomized clinical trial with 90 children, robot-assisted gait training significantly improved gross motor function, balance control, and gait pattern compared to conventional physical therapy. The wearable exoskeleton enabled intensive overground training with nearly 1000 steps per session—4.7 times the training intensity of the control group.
+                    </p>
+                    <p class="pub-venue">
+                        <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2821278" target="_blank"><em>JAMA Network Open</em>, 2024</a>
+                    </p>
+                </div>
+                <div class="research-media">
+                    <div class="image-container">
+                        <img src="assets/images/JAMA.png" alt="Robot-assisted gait training for children with cerebral palsy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section" id="neuromuscular">
+            <h3>Neuromuscular Compensation Strategies Following Selective Muscle Paralysis</h3>
+            <div class="research-content">
+                <div class="research-text">
+                    <p>
+                        This study investigates how the human body compensates for localized muscle dysfunction—foundational knowledge for understanding human biomechanics and physiology.
+                    </p>
+                    <p>
+                        By analyzing gait patterns before and after selective nerve block to the gastrocnemius medial head, I showed that the body uses fundamentally different compensation strategies for level walking versus stair climbing. During level walking, other muscles compensate to maintain normal kinematics; during stair climbing, compensation fails and gait patterns change significantly.
+                    </p>
+                    <p class="pub-venue">
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0966636219303327" target="_blank"><em>Gait & Posture</em>, 2019</a>
+                    </p>
+                </div>
+                <div class="research-media">
+                    <div class="image-container">
+                        <img src="assets/images/GCM.png" alt="Neuromuscular compensation strategies analysis">
                     </div>
                 </div>
             </div>
