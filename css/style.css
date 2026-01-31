@@ -443,6 +443,10 @@ section h2 {
     align-items: flex-start;
 }
 
+.research-content.reverse {
+    flex-direction: row-reverse;
+}
+
 .research-text {
     flex: 1;
 }
