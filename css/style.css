@@ -395,6 +395,12 @@ section h2 {
     font-weight: 500;
 }
 
+.pub-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 0.25rem;
+}
+
 /* Publications Page Specific */
 .pub-section {
     margin-bottom: 3rem;
