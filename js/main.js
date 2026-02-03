@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function startAutoPlay() {
+        clearInterval(autoPlayInterval); // 기존 인터벌 정리 (중복 방지)
         autoPlayInterval = setInterval(nextSlide, autoPlayDelay);
     }
 
