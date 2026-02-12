@@ -756,9 +756,23 @@ footer {
         display: flex;
     }
 
-    .nav-link {
-        padding: 0.75rem 0;
+    .nav-menu li {
         border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.75rem 0;
+        border-bottom: none;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        border-bottom: none;
     }
 
     .nav-toggle {
